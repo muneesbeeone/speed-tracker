@@ -28,7 +28,7 @@
   
           <!-- Main value display in the center -->
           <text x="100" y="70" text-anchor="middle" font-family="Space Grotesk" font-weight="bold" font-size="35" fill="green">
-            {{ value.toFixed(2) }}
+            {{ value.toFixed(0) }}
           </text>
   
           <!-- Static text labels for min, mid, max values -->
