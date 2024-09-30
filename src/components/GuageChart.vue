@@ -1,7 +1,7 @@
 <template>
     <div>
       <div id="chartContainer">
-        <svg id="gaugeChart" viewBox="-80 -10 380 200">
+        <svg id="gaugeChart" viewBox="-80 -20 380 210">
           <!-- Background Arc -->
           <path
             id="gaugeBackground"
@@ -27,7 +27,7 @@
           <polygon :points="pointerPoints" fill="green" />
   
           <!-- Main value display in the center -->
-          <text x="100" y="70" text-anchor="middle" font-family="Space Grotesk" font-weight="bold" font-size="20" fill="green">
+          <text x="100" y="70" text-anchor="middle" font-family="Space Grotesk" font-weight="bold" font-size="35" fill="green">
             {{ value.toFixed(2) }}
           </text>
   
@@ -37,7 +37,7 @@
           <text x="210" y="100" text-anchor="middle" font-size="14">150</text>
   
           <!-- Caption below the gauge -->
-          <text x="100" y="90" text-anchor="middle" font-size="14">Current Mining</text>
+          <text x="100" y="90" text-anchor="middle" font-size="14">speed</text>
         </svg>
       </div>
 <!--   
@@ -124,11 +124,7 @@
   </script>
   
   <style scoped>
-  text {
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    color: azure;
-  }
+
   
   #sliderContainer {
     display: flex;
