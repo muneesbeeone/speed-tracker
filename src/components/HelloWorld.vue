@@ -13,7 +13,7 @@ import GuageChart from './GuageChart.vue';
 export default {
   data() {
     return {
-      speed: 100,
+      speed: 0,
       statusMessage: "Waiting for GPS...",
       prevPosition: null,
       prevTime: null,
